@@ -1,13 +1,13 @@
 PCGVERSION:2.0
 
 # System Information
-CAMPAIGN:Dungeons & Dragons 5e - Core Books
+CAMPAIGN:Dungeons & Dragons 5e - Core Books|CAMPAIGN:5e - Out of the Abyss
 VERSION:6.06.01
-ROLLMETHOD:2|EXPRESSION:D&D 5e
-PURCHASEPOINTS:Y|TYPE:D&D 5e
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
 CHARACTERTYPE:PC
 PREVIEWSHEET:Standard.htm.ftl
-POOLPOINTS:27
+POOLPOINTS:0
 POOLPOINTSAVAIL:27
 GAMEMODE:5e
 TABLABEL:0
@@ -70,6 +70,11 @@ EXPERIENCETABLE:Default
 TEMPLATESAPPLIED:[NAME:First Level|CHOSENTEMPLATE:[NAME:Rogue]]
 TEMPLATESAPPLIED:[NAME:Subrace ~ Lightfoot]
 TEMPLATESAPPLIED:[NAME:Rogue]
+TEMPLATESAPPLIED:[NAME:Background Equipment ~ Criminal]
+TEMPLATESAPPLIED:[NAME:Starting Equipment ~ Rogue|CHOSENTEMPLATE:[NAME:Shortsword]|CHOSENTEMPLATE:[NAME:Burglar's Pack]|CHOSENTEMPLATE:[NAME:Rapier]]
+TEMPLATESAPPLIED:[NAME:Rapier]
+TEMPLATESAPPLIED:[NAME:Shortsword]
+TEMPLATESAPPLIED:[NAME:Burglar's Pack]
 
 # Character Region
 REGION:None
@@ -103,16 +108,86 @@ FEATPOOL:0.0
 # Character Abilities
 ABILITY:Armor Class Method|TYPE:NORMAL|CATEGORY:Special Ability|KEY:AC Tracker ~ No Choice|TYPE:AC_Tracker.AC_Tracker_Choice
 USERPOOL:Armor Class Method|POOLPOINTS:0.0
+ABILITY:Background|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Background ~ Criminal|TYPE:Background.Background Selection.SpecialQuality|DESC:Equipment&colon; A crowbar, a set of dark common clothes including a hood, and a belt pouch containing 15 gp|DESC: Gain Deception &amp;amp; Stealth as class skills.
+USERPOOL:Background|POOLPOINTS:0.0
+ABILITY:Background / Bond|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Criminal Bond ~ 6|TYPE:SpecialQuality.Criminal Bond.Bond|DESC:Someone I loved died because of I mistake I made. That will never happen again.
+USERPOOL:Background / Bond|POOLPOINTS:0.0
+ABILITY:Background / Flaw|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Criminal Flaw ~ 3|TYPE:SpecialQuality.Criminal Flaw.Flaw|DESC:If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.
+USERPOOL:Background / Flaw|POOLPOINTS:0.0
+ABILITY:Background / Ideal|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Criminal Ideal ~ 6|TYPE:SpecialQuality.Criminal Ideal.Ideal|DESC:Redemption. There's a spark of good in everyone. (Good)
+USERPOOL:Background / Ideal|POOLPOINTS:0.0
+ABILITY:Background / Personality Trait|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Criminal Personality Trait ~ 5|TYPE:SpecialQuality.Criminal Personality Trait.Personality Trait|DESC:I am incredibly slow to trust. Those who seem the fairest often have the most to hide.
+ABILITY:Background / Personality Trait|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Criminal Personality Trait ~ 7|TYPE:SpecialQuality.Criminal Personality Trait.Personality Trait|DESC:The best way to get me to do something is to tell me I can't do it.
+USERPOOL:Background / Personality Trait|POOLPOINTS:0.0
+ABILITY:Criminal Specialty|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Criminal Specialty ~ 7|TYPE:SpecialQuality.Criminal Specialty|DESC:Pickpocket
+USERPOOL:Criminal Specialty|POOLPOINTS:0.0
+ABILITY:Expertise|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Expertise ~ Stealth|TYPE:Expertise
+ABILITY:Expertise|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Expertise ~ Thieves' Tools|TYPE:Expertise
+USERPOOL:Expertise|POOLPOINTS:0.0
+ABILITY:Gaming Set Proficiency|TYPE:NORMAL|CATEGORY:Internal|KEY:Tool Proficiency ~ Playing Card Set|APPLIEDTO:|TYPE:Tool Proficiency.Tool Proficiency Gaming Set
+USERPOOL:Gaming Set Proficiency|POOLPOINTS:0.0
 ABILITY:Halfling Subrace|TYPE:NORMAL|CATEGORY:Internal|KEY:Halfling Subrace ~ Lightfoot|TYPE:HalflingSubrace
 USERPOOL:Halfling Subrace|POOLPOINTS:0.0
+ABILITY:Rogue Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:Insight|TYPE:Skill Proficiency.Wisdom
+ABILITY:Rogue Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:Investigation|TYPE:Skill Proficiency.Intelligence
+ABILITY:Rogue Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:Perception|TYPE:Skill Proficiency.Wisdom
+ABILITY:Rogue Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:Sleight of Hand|TYPE:Skill Proficiency.Dexterity
+USERPOOL:Rogue Skill|POOLPOINTS:0.0
+ABILITY:Starting Equipment|TYPE:NORMAL|CATEGORY:Internal|KEY:Starting Equipment|TYPE:Starting Equipment|DESC:Add this once the character for first level is finished. As the selections will be based upon the current Proficiencies. Also, this will only trigger for the initial first level character.
+USERPOOL:Starting Equipment|POOLPOINTS:0.0
 
 # Character Weapon proficiencies
 WEAPONPROF:[WEAPON:Club|WEAPON:Crossbow (Hand)|WEAPON:Crossbow (Light)|WEAPON:Dagger|WEAPON:Dart|WEAPON:Greatclub|WEAPON:Handaxe|WEAPON:Javelin|WEAPON:Light Hammer|WEAPON:Longsword]
 WEAPONPROF:[WEAPON:Mace|WEAPON:Quarterstaff|WEAPON:Rapier|WEAPON:Shortbow|WEAPON:Shortsword|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Unarmed Strike]
 
 # Character Equipment
-MONEY:0
+MONEY:90.00
+EQUIPNAME:Backpack|OUTPUTORDER:0|COST:2|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Backpack|DATA:NAME=Backpack]
+EQUIPNAME:Ball bearings (bag of 1,000)|OUTPUTORDER:0|COST:1|WT:2.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Ball bearings (bag of 1000)|DATA:NAME=Ball bearings (bag of 1,000)$KEY=Ball bearings (bag of 1000)]
+EQUIPNAME:Bell|OUTPUTORDER:0|COST:1|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Bell|DATA:NAME=Bell]
+EQUIPNAME:Belt Pouch|OUTPUTORDER:0|COST:0.5|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Belt Pouch|DATA:NAME=Belt Pouch]
+EQUIPNAME:Candle|OUTPUTORDER:0|COST:0.01|WT:0.0|QUANTITY:5.0|NOTE:|CUSTOMIZATION:[BASEITEM:Candle|DATA:NAME=Candle]
+EQUIPNAME:Clothes (Common/Dark)|OUTPUTORDER:0|COST:0.5|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Clothes (Common/Dark)|DATA:NAME=Clothes (Common/Dark)]
+EQUIPNAME:Coin (Gold)|OUTPUTORDER:0|COST:1|WT:0.02|QUANTITY:15.0|NOTE:|CUSTOMIZATION:[BASEITEM:Coin (Gold)|DATA:NAME=Coin (Gold)]
+EQUIPNAME:Crowbar|OUTPUTORDER:0|COST:2|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Crowbar|DATA:NAME=Crowbar]
+EQUIPNAME:Dagger|OUTPUTORDER:0|COST:2|WT:1.0|QUANTITY:2.0|NOTE:|CUSTOMIZATION:[BASEITEM:Dagger|DATA:NAME=Dagger]
+EQUIPNAME:Hammer|OUTPUTORDER:0|COST:1|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Hammer|DATA:NAME=Hammer]
+EQUIPNAME:Lantern, hooded|OUTPUTORDER:0|COST:5|WT:2.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Lantern (Hooded)|DATA:NAME=Lantern, hooded$KEY=Lantern (Hooded)]
+EQUIPNAME:Leather|OUTPUTORDER:0|COST:10|WT:10.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Leather|DATA:NAME=Leather]
+EQUIPNAME:Oil (flask)|OUTPUTORDER:0|COST:0.1|WT:1.0|QUANTITY:2.0|NOTE:|CUSTOMIZATION:[BASEITEM:Oil (flask)|DATA:NAME=Oil (flask)]
+EQUIPNAME:Piton|OUTPUTORDER:0|COST:0.05|WT:0.25|QUANTITY:10.0|NOTE:|CUSTOMIZATION:[BASEITEM:Piton|DATA:NAME=Piton]
+EQUIPNAME:Rapier|OUTPUTORDER:0|COST:25|WT:2.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Rapier|DATA:NAME=Rapier]
+EQUIPNAME:Rations (1 day)|OUTPUTORDER:0|COST:0.5|WT:2.0|QUANTITY:5.0|NOTE:|CUSTOMIZATION:[BASEITEM:Rations (1 day)|DATA:NAME=Rations (1 day)]
+EQUIPNAME:Rope, hempen (50 feet)|OUTPUTORDER:0|COST:1|WT:10.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Rope (Hempen/50)|DATA:NAME=Rope, hempen (50 feet)$KEY=Rope (Hempen/50)]
+EQUIPNAME:Shortsword|OUTPUTORDER:0|COST:10|WT:2.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Shortsword|DATA:NAME=Shortsword]
+EQUIPNAME:String (10')|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:String (10')|DATA:NAME=String (10')]
+EQUIPNAME:Thieves' Tools|OUTPUTORDER:0|COST:25|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Thieves' Tools|DATA:NAME=Thieves' Tools]
+EQUIPNAME:Tinderbox|OUTPUTORDER:0|COST:0.5|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Tinderbox|DATA:NAME=Tinderbox]
+EQUIPNAME:Waterskin|OUTPUTORDER:0|COST:0.2|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Waterskin|DATA:NAME=Waterskin]
 EQUIPSET:Set di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.1|VALUE:Crowbar|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.10|VALUE:Backpack|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.11|VALUE:Ball bearings (bag of 1,000)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.12|VALUE:String (10')|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.13|VALUE:Bell|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.14|VALUE:Candle|QUANTITY:5.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.15|VALUE:Crowbar|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.16|VALUE:Hammer|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.17|VALUE:Piton|QUANTITY:10.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.18|VALUE:Lantern, hooded|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.19|VALUE:Oil (flask)|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.2|VALUE:Clothes (Common/Dark)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.20|VALUE:Rations (1 day)|QUANTITY:5.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.21|VALUE:Tinderbox|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.22|VALUE:Waterskin|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.23|VALUE:Rope, hempen (50 feet)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.3|VALUE:Belt Pouch|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.4|VALUE:Coin (Gold)|QUANTITY:15.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.5|VALUE:Leather|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.6|VALUE:Dagger|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.7|VALUE:Thieves' Tools|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.8|VALUE:Rapier|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.9|VALUE:Shortsword|QUANTITY:1.0|USETEMPMODS:Y
 CALCEQUIPSET:0.1
 
 # Temporary Bonuses
@@ -133,6 +208,14 @@ CHARACTERMAGIC:
 CHARACTERDMNOTES:
 
 # Kits
+KIT:Criminal Background
+KIT:Starting gold ~ Rogue
+KIT:Leather armor
+KIT:two daggers
+KIT:thieves' tools
+KIT:Rapier
+KIT:Shortsword
+KIT:Burglar's Pack
 
 # Character Master/Follower
 

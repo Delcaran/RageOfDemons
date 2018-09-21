@@ -1,13 +1,13 @@
 PCGVERSION:2.0
 
 # System Information
-CAMPAIGN:Dungeons & Dragons 5e - Core Books
+CAMPAIGN:Dungeons & Dragons 5e - Core Books|CAMPAIGN:5e - Out of the Abyss
 VERSION:6.06.01
-ROLLMETHOD:2|EXPRESSION:D&D 5e
-PURCHASEPOINTS:Y|TYPE:D&D 5e
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
 CHARACTERTYPE:PC
 PREVIEWSHEET:Standard.htm.ftl
-POOLPOINTS:27
+POOLPOINTS:0
 POOLPOINTSAVAIL:27
 GAMEMODE:5e
 TABLABEL:0
@@ -49,18 +49,18 @@ CATCHPHRASE:
 PORTRAIT:
 
 # Character Attributes
-STAT:STR|SCORE:13
-STAT:DEX|SCORE:13
+STAT:STR|SCORE:11
+STAT:DEX|SCORE:15
 STAT:CON|SCORE:15
 STAT:INT|SCORE:10
-STAT:WIS|SCORE:12
-STAT:CHA|SCORE:10
+STAT:WIS|SCORE:10
+STAT:CHA|SCORE:12
 ALIGN:TN
 RACE:Half-Orc
 
 # Character Class(es)
 CLASS:Barbarian|LEVEL:1|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
-CLASSABILITIESLEVEL:Barbarian=1|HITPOINTS:12|SKILLSGAINED:0|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Barbarian=1|HITPOINTS:12|PRESTAT:WIS=-2|PRESTAT:CHA=2|PRESTAT:STR=-2|PRESTAT:DEX=2|SKILLSGAINED:0|SKILLSREMAINING:0
 
 # Character Experience
 EXPERIENCE:0
@@ -69,6 +69,12 @@ EXPERIENCETABLE:Default
 # Character Templates
 TEMPLATESAPPLIED:[NAME:First Level|CHOSENTEMPLATE:[NAME:Barbarian]]
 TEMPLATESAPPLIED:[NAME:Barbarian]
+TEMPLATESAPPLIED:[NAME:Background Equipment ~ Urchin]
+TEMPLATESAPPLIED:[NAME:Starting Equipment ~ Barbarian|CHOSENTEMPLATE:[NAME:Any Martial Melee Weapon]|CHOSENTEMPLATE:[NAME:Any Simple Weapon]]
+TEMPLATESAPPLIED:[NAME:Any Martial Melee Weapon|CHOSENTEMPLATE:[NAME:Greatsword]]
+TEMPLATESAPPLIED:[NAME:Greatsword]
+TEMPLATESAPPLIED:[NAME:Any Simple Weapon|CHOSENTEMPLATE:[NAME:Shortbow]]
+TEMPLATESAPPLIED:[NAME:Shortbow]
 
 # Character Region
 REGION:None
@@ -100,6 +106,24 @@ LANGUAGE:Common|LANGUAGE:Orc
 FEATPOOL:0.0
 
 # Character Abilities
+ABILITY:Armor Class Method|TYPE:NORMAL|CATEGORY:Special Ability|KEY:AC Tracker ~ Barbarian|TYPE:AC_Tracker.AC_Tracker_Choice.AC_Tracker_SelectionMade
+USERPOOL:Armor Class Method|POOLPOINTS:0.0
+ABILITY:Background|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Background ~ Urchin|TYPE:Background.Background Selection.SpecialQuality|DESC:Equipment&colon; A small knife, a map of the city you grew up in, a pet mouse, a token to remember your parents by, a set of common clothes, and a belt pouch containing 10 gp|DESC: Gain Sleight of Hand &amp;amp; Stealth as class skills.
+USERPOOL:Background|POOLPOINTS:0.0
+ABILITY:Background / Bond|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Urchin Bond ~ 2|TYPE:SpecialQuality.Urchin Bond.Bond|DESC:I sponsor an orphanage to keep others from enduring what I was forced to endure.
+USERPOOL:Background / Bond|POOLPOINTS:0.0
+ABILITY:Background / Flaw|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Urchin Flaw ~ 5|TYPE:SpecialQuality.Urchin Flaw.Flaw|DESC:It's not stealing if I need it more than someone else.
+USERPOOL:Background / Flaw|POOLPOINTS:0.0
+ABILITY:Background / Ideal|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Urchin Ideal ~ 5|TYPE:SpecialQuality.Urchin Ideal.Ideal|DESC:People. I help the people who help me-that's what keeps us alive. (Neutral)
+USERPOOL:Background / Ideal|POOLPOINTS:0.0
+ABILITY:Background / Personality Trait|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Urchin Personality Trait ~ 5|TYPE:SpecialQuality.Urchin Personality Trait.Personality Trait|DESC:I eat like a pig and have bad manners.
+ABILITY:Background / Personality Trait|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Urchin Personality Trait ~ 7|TYPE:SpecialQuality.Urchin Personality Trait.Personality Trait|DESC:I don't like to bathe.
+USERPOOL:Background / Personality Trait|POOLPOINTS:0.0
+ABILITY:Barbarian Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:Athletics|TYPE:Skill Proficiency.Strength
+ABILITY:Barbarian Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:Survival|TYPE:Skill Proficiency.Wisdom
+USERPOOL:Barbarian Skill|POOLPOINTS:0.0
+ABILITY:Starting Equipment|TYPE:NORMAL|CATEGORY:Internal|KEY:Starting Equipment|TYPE:Starting Equipment|DESC:Add this once the character for first level is finished. As the selections will be based upon the current Proficiencies. Also, this will only trigger for the initial first level character.
+USERPOOL:Starting Equipment|POOLPOINTS:0.0
 
 # Character Weapon proficiencies
 WEAPONPROF:[WEAPON:Battleaxe|WEAPON:Blowgun|WEAPON:Club|WEAPON:Crossbow (Hand)|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)|WEAPON:Dagger|WEAPON:Dart|WEAPON:Flail|WEAPON:Glaive]
@@ -108,8 +132,44 @@ WEAPONPROF:[WEAPON:Mace|WEAPON:Maul|WEAPON:Morningstar|WEAPON:Net|WEAPON:Pike|WE
 WEAPONPROF:[WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Trident|WEAPON:Unarmed Strike|WEAPON:War Pick|WEAPON:Warhammer|WEAPON:Whip]
 
 # Character Equipment
-MONEY:0
+MONEY:60.00
+EQUIPNAME:Backpack|OUTPUTORDER:0|COST:2|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Backpack|DATA:NAME=Backpack]
+EQUIPNAME:Bedroll|OUTPUTORDER:0|COST:1|WT:7.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Bedroll|DATA:NAME=Bedroll]
+EQUIPNAME:Belt Pouch|OUTPUTORDER:0|COST:0.5|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Belt Pouch|DATA:NAME=Belt Pouch]
+EQUIPNAME:City Map|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:City Map|DATA:NAME=City Map]
+EQUIPNAME:Clothes, Common|OUTPUTORDER:0|COST:0.5|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Clothes (Common)|DATA:NAME=Clothes, Common$KEY=Clothes (Common)]
+EQUIPNAME:Coin (Gold)|OUTPUTORDER:0|COST:1|WT:0.02|QUANTITY:10.0|NOTE:|CUSTOMIZATION:[BASEITEM:Coin (Gold)|DATA:NAME=Coin (Gold)]
+EQUIPNAME:Greatsword|OUTPUTORDER:0|COST:50|WT:6.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Greatsword|DATA:NAME=Greatsword]
+EQUIPNAME:Javelin|OUTPUTORDER:0|COST:0.5|WT:2.0|QUANTITY:4.0|NOTE:|CUSTOMIZATION:[BASEITEM:Javelin|DATA:NAME=Javelin]
+EQUIPNAME:Mess kit|OUTPUTORDER:0|COST:0.2|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Mess kit|DATA:NAME=Mess kit]
+EQUIPNAME:Pet Mouse|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Pet Mouse|DATA:NAME=Pet Mouse]
+EQUIPNAME:Rations (1 day)|OUTPUTORDER:0|COST:0.5|WT:2.0|QUANTITY:10.0|NOTE:|CUSTOMIZATION:[BASEITEM:Rations (1 day)|DATA:NAME=Rations (1 day)]
+EQUIPNAME:Rope, hempen (50 feet)|OUTPUTORDER:0|COST:1|WT:10.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Rope (Hempen/50)|DATA:NAME=Rope, hempen (50 feet)$KEY=Rope (Hempen/50)]
+EQUIPNAME:Shortbow|OUTPUTORDER:0|COST:25|WT:2.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Shortbow|DATA:NAME=Shortbow]
+EQUIPNAME:small knife|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:small knife|DATA:NAME=small knife]
+EQUIPNAME:Tinderbox|OUTPUTORDER:0|COST:0.5|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Tinderbox|DATA:NAME=Tinderbox]
+EQUIPNAME:Token of Parents|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Token of Parents|DATA:NAME=Token of Parents]
+EQUIPNAME:Torch|OUTPUTORDER:0|COST:0.01|WT:1.0|QUANTITY:10.0|NOTE:|CUSTOMIZATION:[BASEITEM:Torch|DATA:NAME=Torch]
+EQUIPNAME:Waterskin|OUTPUTORDER:0|COST:0.2|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Waterskin|DATA:NAME=Waterskin]
 EQUIPSET:Set di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.1|VALUE:small knife|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.10|VALUE:Bedroll|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.11|VALUE:Mess kit|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.12|VALUE:Tinderbox|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.13|VALUE:Torch|QUANTITY:10.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.14|VALUE:Rations (1 day)|QUANTITY:10.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.15|VALUE:Waterskin|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.16|VALUE:Rope, hempen (50 feet)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.17|VALUE:Greatsword|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.18|VALUE:Shortbow|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.2|VALUE:City Map|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.3|VALUE:Pet Mouse|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.4|VALUE:Token of Parents|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.5|VALUE:Clothes, Common|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.6|VALUE:Belt Pouch|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.7|VALUE:Coin (Gold)|QUANTITY:10.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.8|VALUE:Javelin|QUANTITY:4.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.9|VALUE:Backpack|QUANTITY:1.0|USETEMPMODS:Y
 CALCEQUIPSET:0.1
 
 # Temporary Bonuses
@@ -129,6 +189,12 @@ CHARACTERMAGIC:
 CHARACTERDMNOTES:
 
 # Kits
+KIT:Urchin Background
+KIT:Starting gold ~ Barbarian
+KIT:four javelins
+KIT:Explorer's Pack
+KIT:Greatsword
+KIT:Shortbow
 
 # Character Master/Follower
 

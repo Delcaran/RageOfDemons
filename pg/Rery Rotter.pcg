@@ -1,13 +1,13 @@
 PCGVERSION:2.0
 
 # System Information
-CAMPAIGN:Dungeons & Dragons 5e - Core Books
+CAMPAIGN:Dungeons & Dragons 5e - Core Books|CAMPAIGN:5e - Out of the Abyss
 VERSION:6.06.01
-ROLLMETHOD:2|EXPRESSION:D&D 5e
-PURCHASEPOINTS:Y|TYPE:D&D 5e
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
 CHARACTERTYPE:PC
 PREVIEWSHEET:Standard.htm.ftl
-POOLPOINTS:27
+POOLPOINTS:0
 POOLPOINTSAVAIL:27
 GAMEMODE:5e
 TABLABEL:0
@@ -69,14 +69,39 @@ EXPERIENCETABLE:Default
 # Character Templates
 TEMPLATESAPPLIED:[NAME:First Level|CHOSENTEMPLATE:[NAME:Cleric]]
 TEMPLATESAPPLIED:[NAME:Cleric]
+TEMPLATESAPPLIED:[NAME:Background Equipment ~ Hermit]
+TEMPLATESAPPLIED:[NAME:Starting Equipment ~ Cleric|CHOSENTEMPLATE:[NAME:Mace]|CHOSENTEMPLATE:[NAME:Scale Mail]|CHOSENTEMPLATE:[NAME:Holy Symbol (Amulet)]|CHOSENTEMPLATE:[NAME:Any Simple Weapon]|CHOSENTEMPLATE:[NAME:Explorer's Pack]]
+TEMPLATESAPPLIED:[NAME:Mace]
+TEMPLATESAPPLIED:[NAME:Scale Mail]
+TEMPLATESAPPLIED:[NAME:Any Simple Weapon|CHOSENTEMPLATE:[NAME:Mace]]
+TEMPLATESAPPLIED:[NAME:Explorer's Pack]
+TEMPLATESAPPLIED:[NAME:Holy Symbol (Amulet)]
 
 # Character Region
 REGION:None
 
 # Character Skills
+SKILL:Acrobatics|OUTPUTORDER:1|
+SKILL:Animal Handling|OUTPUTORDER:2|
+SKILL:Arcana|OUTPUTORDER:3|
+SKILL:Athletics|OUTPUTORDER:4|
+SKILL:Deception|OUTPUTORDER:5|
+SKILL:History|OUTPUTORDER:6|
+SKILL:Insight|OUTPUTORDER:7|
+SKILL:Intimidation|OUTPUTORDER:8|
+SKILL:Investigation|OUTPUTORDER:9|
+SKILL:Medicine|OUTPUTORDER:10|
+SKILL:Nature|OUTPUTORDER:11|
+SKILL:Perception|OUTPUTORDER:12|
+SKILL:Performance|OUTPUTORDER:13|
+SKILL:Persuasion|OUTPUTORDER:14|
+SKILL:Religion|OUTPUTORDER:15|
+SKILL:Sleight of Hand|OUTPUTORDER:16|
+SKILL:Stealth|OUTPUTORDER:17|
+SKILL:Survival|OUTPUTORDER:18|
 
 # Character Languages
-LANGUAGE:Common
+LANGUAGE:Abyssal|LANGUAGE:Common|LANGUAGE:Undercommon
 
 # Character Feats
 FEATPOOL:0.0
@@ -84,20 +109,81 @@ FEATPOOL:0.0
 # Character Abilities
 ABILITY:Armor Class Method|TYPE:NORMAL|CATEGORY:Special Ability|KEY:AC Tracker ~ No Choice|TYPE:AC_Tracker.AC_Tracker_Choice
 USERPOOL:Armor Class Method|POOLPOINTS:0.0
+ABILITY:Background|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Background ~ Hermit|TYPE:Background.Background Selection.SpecialQuality|DESC:Equipment&colon; A scroll case stuffed full of notes from your studies or prayers, a winter blanket, a set of common clothes, an herbalism kit, and 5 gp|DESC: Gain Medicine &amp;amp; Religion as class skills.
+USERPOOL:Background|POOLPOINTS:0.0
+ABILITY:Background / Bond|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Hermit Bond ~ 6|TYPE:SpecialQuality.Hermit Bond.Bond|DESC:My isolation gave me great insight into a great evil that only I can destroy.
+USERPOOL:Background / Bond|POOLPOINTS:0.0
+ABILITY:Background / Flaw|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Hermit Flaw ~ 4|TYPE:SpecialQuality.Hermit Flaw.Flaw|DESC:I let my need to win arguments overshadow friendships and harmony.
+USERPOOL:Background / Flaw|POOLPOINTS:0.0
+ABILITY:Background / Ideal|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Hermit Ideal ~ 3|TYPE:SpecialQuality.Hermit Ideal.Ideal|DESC:Free Thinking. Inquiry and curiosity are the pillars of progress. (Chaotic)
+USERPOOL:Background / Ideal|POOLPOINTS:0.0
+ABILITY:Background / Personality Trait|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Hermit Personality Trait ~ 4|TYPE:SpecialQuality.Hermit Personality Trait.Personality Trait|DESC:I feel tremendous empathy for all who suffer.
+ABILITY:Background / Personality Trait|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Hermit Personality Trait ~ 8|TYPE:SpecialQuality.Hermit Personality Trait.Personality Trait|DESC:I am working on a grand philosophical theory and love sharing my ideas.
+USERPOOL:Background / Personality Trait|POOLPOINTS:0.0
 ABILITY:Cleric Cantrip|TYPE:NORMAL|CATEGORY:Internal|KEY:Cleric Cantrip ~ Light|TYPE:Cleric Cantrip|DESC:You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action. If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.
+ABILITY:Cleric Cantrip|TYPE:NORMAL|CATEGORY:Internal|KEY:Cleric Cantrip ~ Sacred Flame|TYPE:Cleric Cantrip|DESC:Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+ABILITY:Cleric Cantrip|TYPE:NORMAL|CATEGORY:Internal|KEY:Cleric Cantrip ~ Spare the Dying|TYPE:Cleric Cantrip.Cleric Necromancy Cantrip|DESC:You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.
 USERPOOL:Cleric Cantrip|POOLPOINTS:0.0
+ABILITY:Cleric Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:History|TYPE:Skill Proficiency.Intelligence
+ABILITY:Cleric Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:Persuasion|TYPE:Skill Proficiency.Charisma
+USERPOOL:Cleric Skill|POOLPOINTS:0.0
+ABILITY:Divine Domain|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Divine Domain ~ Life Domain|TYPE:Cleric Class Feature.Divine Domain.SpecialQuality.Class Feature|DESC:The Life domain focuses on the vibrant positive energy-one of the fundamental forces of the universe- that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as Chauntea, Arawai, and Demeter), sun gods (such as Lathander, Pelor, and Re-Horakhty), gods of healing or endurance (such as Ilmater, Mishakal, Apollo, and Diancecht), and gods of home and community (such as Hestia, Hathor, and Boldrei).
+USERPOOL:Divine Domain|POOLPOINTS:0.0
+ABILITY:Hermit Life of Seclusion|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Hermit Life of Seclusion ~ 1|TYPE:SpecialQuality.Hermit Life of Seclusion|DESC:I was searching for spiritual enlightenment.
+USERPOOL:Hermit Life of Seclusion|POOLPOINTS:0.0
 ABILITY:Human Ethnicity|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Human Ethnicity ~ None|TYPE:Human Ethnicity
 USERPOOL:Human Ethnicity|POOLPOINTS:0.0
 ABILITY:Human Rule Selection|TYPE:NORMAL|CATEGORY:Internal|KEY:Basic Rules Human|TYPE:Human Rule Selection|DESC:Typical human per player's handbook, gains the ability score increase of +1 for each, and the languages.
 USERPOOL:Human Rule Selection|POOLPOINTS:0.0
+ABILITY:Language Selection|TYPE:NORMAL|CATEGORY:Language|KEY:Abyssal|TYPE:Language.Spoken.Infernal
+ABILITY:Language Selection|TYPE:NORMAL|CATEGORY:Language|KEY:Undercommon|TYPE:Language.Spoken.Elvish
+USERPOOL:Language Selection|POOLPOINTS:0.0
+ABILITY:Starting Equipment|TYPE:NORMAL|CATEGORY:Internal|KEY:Starting Equipment|TYPE:Starting Equipment|DESC:Add this once the character for first level is finished. As the selections will be based upon the current Proficiencies. Also, this will only trigger for the initial first level character.
+USERPOOL:Starting Equipment|POOLPOINTS:0.0
 
 # Character Weapon proficiencies
 WEAPONPROF:[WEAPON:Club|WEAPON:Crossbow (Light)|WEAPON:Dagger|WEAPON:Dart|WEAPON:Greatclub|WEAPON:Handaxe|WEAPON:Javelin|WEAPON:Light Hammer|WEAPON:Mace|WEAPON:Quarterstaff]
 WEAPONPROF:[WEAPON:Shortbow|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Unarmed Strike]
 
 # Character Equipment
-MONEY:0
+MONEY:150.00
+EQUIPNAME:Backpack|OUTPUTORDER:0|COST:2|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Backpack|DATA:NAME=Backpack]
+EQUIPNAME:Bedroll|OUTPUTORDER:0|COST:1|WT:7.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Bedroll|DATA:NAME=Bedroll]
+EQUIPNAME:Case, map or scroll|OUTPUTORDER:0|COST:1|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Case (Map or Scroll)|DATA:NAME=Case, map or scroll$KEY=Case (Map or Scroll)]
+EQUIPNAME:Clothes, Common|OUTPUTORDER:0|COST:0.5|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Clothes (Common)|DATA:NAME=Clothes, Common$KEY=Clothes (Common)]
+EQUIPNAME:Coin (Gold)|OUTPUTORDER:0|COST:1|WT:0.02|QUANTITY:5.0|NOTE:|CUSTOMIZATION:[BASEITEM:Coin (Gold)|DATA:NAME=Coin (Gold)]
+EQUIPNAME:Herbalism Kit|OUTPUTORDER:0|COST:5|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Herbalism Kit|DATA:NAME=Herbalism Kit]
+EQUIPNAME:Holy Symbol (Amulet)|OUTPUTORDER:0|COST:5|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Holy Symbol (Amulet)|DATA:NAME=Holy Symbol (Amulet)]
+EQUIPNAME:Mace|OUTPUTORDER:0|COST:5|WT:4.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Mace|DATA:NAME=Mace]
+EQUIPNAME:Mess kit|OUTPUTORDER:0|COST:0.2|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Mess kit|DATA:NAME=Mess kit]
+EQUIPNAME:Notes|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Notes|DATA:NAME=Notes]
+EQUIPNAME:Rations (1 day)|OUTPUTORDER:0|COST:0.5|WT:2.0|QUANTITY:10.0|NOTE:|CUSTOMIZATION:[BASEITEM:Rations (1 day)|DATA:NAME=Rations (1 day)]
+EQUIPNAME:Rope, hempen (50 feet)|OUTPUTORDER:0|COST:1|WT:10.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Rope (Hempen/50)|DATA:NAME=Rope, hempen (50 feet)$KEY=Rope (Hempen/50)]
+EQUIPNAME:Scale Mail|OUTPUTORDER:0|COST:50|WT:45.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Scale Mail|DATA:NAME=Scale Mail]
+EQUIPNAME:Shield|OUTPUTORDER:0|COST:10|WT:6.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Shield|DATA:NAME=Shield]
+EQUIPNAME:Tinderbox|OUTPUTORDER:0|COST:0.5|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Tinderbox|DATA:NAME=Tinderbox]
+EQUIPNAME:Torch|OUTPUTORDER:0|COST:0.01|WT:1.0|QUANTITY:10.0|NOTE:|CUSTOMIZATION:[BASEITEM:Torch|DATA:NAME=Torch]
+EQUIPNAME:Waterskin|OUTPUTORDER:0|COST:0.2|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Waterskin|DATA:NAME=Waterskin]
+EQUIPNAME:Winter Blanket|OUTPUTORDER:0|COST:0.5|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Winter Blanket|DATA:NAME=Winter Blanket]
 EQUIPSET:Set di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.1|VALUE:Case, map or scroll|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.10|VALUE:Backpack|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.11|VALUE:Bedroll|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.12|VALUE:Mess kit|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.13|VALUE:Tinderbox|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.14|VALUE:Torch|QUANTITY:10.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.15|VALUE:Rations (1 day)|QUANTITY:10.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.16|VALUE:Waterskin|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.17|VALUE:Rope, hempen (50 feet)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.18|VALUE:Holy Symbol (Amulet)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.2|VALUE:Notes|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.3|VALUE:Winter Blanket|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.4|VALUE:Clothes, Common|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.5|VALUE:Herbalism Kit|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.6|VALUE:Coin (Gold)|QUANTITY:5.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.7|VALUE:Shield|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.8|VALUE:Mace|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.9|VALUE:Scale Mail|QUANTITY:1.0|USETEMPMODS:Y
 CALCEQUIPSET:0.1
 
 # Temporary Bonuses
@@ -108,6 +194,8 @@ CALCEQUIPSET:0.1
 
 # Character Spells Information
 SPELLNAME:Light|TIMES:1|CLASS:Cleric|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Sacred Flame|TIMES:1|CLASS:Cleric|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Spare the Dying|TIMES:1|CLASS:Cleric|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
 
 # Character Description/Bio/History
 CHARACTERBIO:
@@ -118,6 +206,13 @@ CHARACTERMAGIC:
 CHARACTERDMNOTES:
 
 # Kits
+KIT:Hermit Background
+KIT:Starting gold ~ Cleric
+KIT:Shield
+KIT:Mace
+KIT:Scale Mail
+KIT:Explorer's Pack
+KIT:Holy Symbol (Amulet)
 
 # Character Master/Follower
 

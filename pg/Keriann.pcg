@@ -1,18 +1,18 @@
 PCGVERSION:2.0
 
 # System Information
-CAMPAIGN:Dungeons & Dragons 5e - Core Books
+CAMPAIGN:Dungeons & Dragons 5e - Core Books|CAMPAIGN:5e - Out of the Abyss
 VERSION:6.06.01
-ROLLMETHOD:2|EXPRESSION:D&D 5e
-PURCHASEPOINTS:Y|TYPE:D&D 5e
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
 CHARACTERTYPE:PC
 PREVIEWSHEET:Standard.htm.ftl
-POOLPOINTS:27
+POOLPOINTS:0
 POOLPOINTSAVAIL:27
 GAMEMODE:5e
 TABLABEL:0
 AUTOSPELLS:Y
-USEHIGHERKNOWN:N
+USEHIGHERKNOWN:Y
 USEHIGHERPREPPED:N
 LOADCOMPANIONS:N
 USETEMPMODS:Y
@@ -69,29 +69,120 @@ EXPERIENCETABLE:Default
 # Character Templates
 TEMPLATESAPPLIED:[NAME:First Level|CHOSENTEMPLATE:[NAME:Warlock]]
 TEMPLATESAPPLIED:[NAME:Warlock]
+TEMPLATESAPPLIED:[NAME:Background Equipment ~ Charlatan]
+TEMPLATESAPPLIED:[NAME:Starting Equipment ~ Warlock|CHOSENTEMPLATE:[NAME:light crossbow and 20 bolts]|CHOSENTEMPLATE:[NAME:Arcane Focus]|CHOSENTEMPLATE:[NAME:Leather Armor]|CHOSENTEMPLATE:[NAME:Any Simple Weapon]|CHOSENTEMPLATE:[NAME:Scholar's Pack]]
+TEMPLATESAPPLIED:[NAME:Leather Armor]
+TEMPLATESAPPLIED:[NAME:Any Simple Weapon|CHOSENTEMPLATE:[NAME:Quarterstaff]]
+TEMPLATESAPPLIED:[NAME:Quarterstaff]
+TEMPLATESAPPLIED:[NAME:light crossbow and 20 bolts]
+TEMPLATESAPPLIED:[NAME:Arcane Focus|CHOSENTEMPLATE:[NAME:Arcane Focus (Crystal)]]
+TEMPLATESAPPLIED:[NAME:Arcane Focus (Crystal)]
+TEMPLATESAPPLIED:[NAME:Scholar's Pack]
 
 # Character Region
 REGION:None
 
 # Character Skills
+SKILL:Acrobatics|OUTPUTORDER:1|
+SKILL:Animal Handling|OUTPUTORDER:2|
+SKILL:Arcana|OUTPUTORDER:3|
+SKILL:Athletics|OUTPUTORDER:4|
+SKILL:Deception|OUTPUTORDER:5|
+SKILL:History|OUTPUTORDER:6|
+SKILL:Insight|OUTPUTORDER:7|
+SKILL:Intimidation|OUTPUTORDER:8|
+SKILL:Investigation|OUTPUTORDER:9|
+SKILL:Medicine|OUTPUTORDER:10|
+SKILL:Nature|OUTPUTORDER:11|
+SKILL:Perception|OUTPUTORDER:12|
+SKILL:Performance|OUTPUTORDER:13|
+SKILL:Persuasion|OUTPUTORDER:14|
+SKILL:Religion|OUTPUTORDER:15|
+SKILL:Sleight of Hand|OUTPUTORDER:16|
+SKILL:Stealth|OUTPUTORDER:17|
+SKILL:Survival|OUTPUTORDER:18|
 
 # Character Languages
-LANGUAGE:Common|LANGUAGE:Elvish
+LANGUAGE:Common|LANGUAGE:Elvish|LANGUAGE:Sylvan
 
 # Character Feats
 FEATPOOL:0.0
 
 # Character Abilities
+ABILITY:Armor Class Method|TYPE:NORMAL|CATEGORY:Special Ability|KEY:AC Tracker ~ Mage Armor|TYPE:AC_Tracker.AC_Tracker_Choice.AC_Tracker_SelectionMade
+USERPOOL:Armor Class Method|POOLPOINTS:0.0
+ABILITY:Background|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Background ~ Charlatan|TYPE:Background.Background Selection.SpecialQuality|DESC:Equipment&colon; A set of fine clothes, a disguise kit, tools of the con of your choice (ten stoppered bottles filled with colored liquid, a set of weighted dice, a deck of marked cards, or a signet ring of an imaginary duke), and a belt pouch containing 15 gp|DESC: Gain Deception &amp;amp; Sleight of Hand as class skills.
+USERPOOL:Background|POOLPOINTS:0.0
+ABILITY:Background / Bond|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Charlatan Bond ~ 4|TYPE:SpecialQuality.Charlatan Bond.Bond|DESC:I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me.
+USERPOOL:Background / Bond|POOLPOINTS:0.0
+ABILITY:Background / Flaw|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Charlatan Flaw ~ 5|TYPE:SpecialQuality.Charlatan Flaw.Flaw|DESC:I can't resist swindling people who are more powerful than me.
+USERPOOL:Background / Flaw|POOLPOINTS:0.0
+ABILITY:Background / Ideal|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Charlatan Ideal ~ 1|TYPE:SpecialQuality.Charlatan Ideal.Ideal|DESC:Independence. I am a free spirit- no one tells me what to do. (Chaotic)
+USERPOOL:Background / Ideal|POOLPOINTS:0.0
+ABILITY:Background / Personality Trait|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Charlatan Personality Trait ~ 6|TYPE:SpecialQuality.Charlatan Personality Trait.Personality Trait|DESC:Sarcasm and insults are my weapons of choice.
+ABILITY:Background / Personality Trait|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Charlatan Personality Trait ~ 8|TYPE:SpecialQuality.Charlatan Personality Trait.Personality Trait|DESC:I pocket anything I see that might have some value.
+USERPOOL:Background / Personality Trait|POOLPOINTS:0.0
+ABILITY:Charlatan Scam|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Charlatan Scam ~ 3|TYPE:SpecialQuality.Charlatan Scam|DESC:I insinuate myself into people's lives to prey on their weakness and secure their fortunes.
+USERPOOL:Charlatan Scam|POOLPOINTS:0.0
 ABILITY:Half-Elf Stat Choice|TYPE:NORMAL|CATEGORY:Internal|KEY:Half-Elf Stat Choice|APPLIEDTO:DEX,CON|TYPE:
 USERPOOL:Half-Elf Stat Choice|POOLPOINTS:0.0
+ABILITY:Language Selection|TYPE:NORMAL|CATEGORY:Language|KEY:Sylvan|TYPE:Language.Spoken.Elvish
+USERPOOL:Language Selection|POOLPOINTS:0.0
+ABILITY:Otherworldly Patron|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Otherworldly Patron ~ The Archfey|TYPE:Warlock Class Feature.SpecialQuality.Class Feature.Otherworldly Patron|DESC:Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born. This being's motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges. Beings of this sort include the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; her consort Oberon, the Green Lord; Hyrsam, the Prince of Fools; and ancient hags.
+USERPOOL:Otherworldly Patron|POOLPOINTS:0.0
+ABILITY:Skill Proficiency|TYPE:NORMAL|CATEGORY:Skill|KEY:Arcana|TYPE:Skill Proficiency.Intelligence
+ABILITY:Skill Proficiency|TYPE:NORMAL|CATEGORY:Skill|KEY:Performance|TYPE:Skill Proficiency.Charisma
+USERPOOL:Skill Proficiency|POOLPOINTS:0.0
+ABILITY:Starting Equipment|TYPE:NORMAL|CATEGORY:Internal|KEY:Starting Equipment|TYPE:Starting Equipment|DESC:Add this once the character for first level is finished. As the selections will be based upon the current Proficiencies. Also, this will only trigger for the initial first level character.
+USERPOOL:Starting Equipment|POOLPOINTS:0.0
+ABILITY:Warlock Cantrip|TYPE:NORMAL|CATEGORY:Internal|KEY:Warlock Cantrip ~ Eldritch Blast|TYPE:Warlock Cantrip
+ABILITY:Warlock Cantrip|TYPE:NORMAL|CATEGORY:Internal|KEY:Warlock Cantrip ~ Minor Illusion|TYPE:Warlock Cantrip
+USERPOOL:Warlock Cantrip|POOLPOINTS:0.0
+ABILITY:Warlock Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:History|TYPE:Skill Proficiency.Intelligence
+ABILITY:Warlock Skill|TYPE:NORMAL|CATEGORY:Skill|KEY:Investigation|TYPE:Skill Proficiency.Intelligence
+USERPOOL:Warlock Skill|POOLPOINTS:0.0
 
 # Character Weapon proficiencies
 WEAPONPROF:[WEAPON:Club|WEAPON:Crossbow (Light)|WEAPON:Dagger|WEAPON:Dart|WEAPON:Greatclub|WEAPON:Handaxe|WEAPON:Javelin|WEAPON:Light Hammer|WEAPON:Mace|WEAPON:Quarterstaff]
 WEAPONPROF:[WEAPON:Shortbow|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Unarmed Strike]
 
 # Character Equipment
-MONEY:0
+MONEY:120.00
+EQUIPNAME:Backpack|OUTPUTORDER:0|COST:2|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Backpack|DATA:NAME=Backpack]
+EQUIPNAME:Belt Pouch|OUTPUTORDER:0|COST:0.5|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Belt Pouch|DATA:NAME=Belt Pouch]
+EQUIPNAME:book of lore|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:book of lore|DATA:NAME=book of lore]
+EQUIPNAME:Clothes, Fine|OUTPUTORDER:0|COST:15|WT:6.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Clothes (Fine)|DATA:NAME=Clothes, Fine$KEY=Clothes (Fine)]
+EQUIPNAME:Coin (Gold)|OUTPUTORDER:0|COST:1|WT:0.02|QUANTITY:15.0|NOTE:|CUSTOMIZATION:[BASEITEM:Coin (Gold)|DATA:NAME=Coin (Gold)]
+EQUIPNAME:Crossbow bolts (20)|OUTPUTORDER:0|COST:1|WT:1.5|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Crossbow bolts (20)|DATA:NAME=Crossbow bolts (20)]
+EQUIPNAME:Crossbow, Light|OUTPUTORDER:0|COST:25|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Crossbow (Light)|DATA:NAME=Crossbow, Light$KEY=Crossbow (Light)]
+EQUIPNAME:Crystal|OUTPUTORDER:0|COST:10|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Arcane Focus (Crystal)|DATA:NAME=Crystal$KEY=Arcane Focus (Crystal)]
+EQUIPNAME:Dagger|OUTPUTORDER:0|COST:2|WT:1.0|QUANTITY:2.0|NOTE:|CUSTOMIZATION:[BASEITEM:Dagger|DATA:NAME=Dagger]
+EQUIPNAME:Disguise Kit|OUTPUTORDER:0|COST:25|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Disguise Kit|DATA:NAME=Disguise Kit]
+EQUIPNAME:Ink (1 ounce bottle)|OUTPUTORDER:0|COST:10|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Ink (1 ounce bottle)|DATA:NAME=Ink (1 ounce bottle)]
+EQUIPNAME:Ink pen|OUTPUTORDER:0|COST:0.02|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Ink pen|DATA:NAME=Ink pen]
+EQUIPNAME:Leather|OUTPUTORDER:0|COST:10|WT:10.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Leather|DATA:NAME=Leather]
+EQUIPNAME:little bag of sand|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:little bag of sand|DATA:NAME=little bag of sand]
+EQUIPNAME:Parchment (one sheet)|OUTPUTORDER:0|COST:0.1|WT:0.0|QUANTITY:10.0|NOTE:|CUSTOMIZATION:[BASEITEM:Parchment (one sheet)|DATA:NAME=Parchment (one sheet)]
+EQUIPNAME:Quarterstaff|OUTPUTORDER:0|COST:0.2|WT:4.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Quarterstaff|DATA:NAME=Quarterstaff$EQMOD=VERSATILE_D8]
+EQUIPNAME:small knife|OUTPUTORDER:0|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:small knife|DATA:NAME=small knife]
 EQUIPSET:Set di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.1|VALUE:Clothes, Fine|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.10|VALUE:Crystal|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.11|VALUE:Backpack|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.12|VALUE:book of lore|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.13|VALUE:Ink (1 ounce bottle)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.14|VALUE:Ink pen|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.15|VALUE:Parchment (one sheet)|QUANTITY:10.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.16|VALUE:little bag of sand|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.17|VALUE:small knife|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.2|VALUE:Disguise Kit|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.3|VALUE:Belt Pouch|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.4|VALUE:Coin (Gold)|QUANTITY:15.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.5|VALUE:Dagger|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.6|VALUE:Leather|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.7|VALUE:Quarterstaff|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.8|VALUE:Crossbow, Light|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.9|VALUE:Crossbow bolts (20)|QUANTITY:1.0|USETEMPMODS:Y
 CALCEQUIPSET:0.1
 
 # Temporary Bonuses
@@ -101,9 +192,14 @@ CALCEQUIPSET:0.1
 # Character Deity/Domain
 
 # Character Spells Information
+SPELLBOOK:Warlock Cantrip|TYPE:4
+SPELLNAME:Armor of Agathys|TIMES:1|CLASS:Warlock|BOOK:Known Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Warlock]
+SPELLNAME:Charm Person|TIMES:1|CLASS:Warlock|BOOK:Known Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Warlock]
+SPELLNAME:Eldritch Blast|TIMES:1|CLASS:Warlock|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Warlock]
+SPELLNAME:Minor Illusion|TIMES:1|CLASS:Warlock|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Warlock]
 
 # Character Description/Bio/History
-CHARACTERBIO:
+CHARACTERBIO:Hyrsam is one of the most ancient fey creatures in existence. The eldest son of Oran, the Green Lord, Hyrsam remembers the earliest days of the Feywild, before the Fey Courts were formed, and even before the fomorians held dominion over the plane. Though Hyrsam plays the fool for the nobles of the Feywild, he is both clever and erudite, with an in-depth understanding of how to manipulate others. His true goals are both far-reaching and ambitious&colon; Hyrsam seeks no less than the complete collapse of all fey kingdoms so that the Feywild might return to its original pristine state. To that end, his songs sow the seeds of rebellion wherever he goes, and his revelers offer whatever clandestine assistance they can to rebels and traitors.&nl;&nl;A hero of the Court of Stars, Hyrsam has used his powers to topple numerous fomorian strongholds. He can wield his magic fiddlestick like a rapier, to deadly effect. His music, which some say is audible even to the spirit, can charm allies and enemies alike, allowing him to manipulate them both on and off the battlefield.&nl;&nl;Hyrsam welcomes everybody into his circle, regardless of race or alignment. The only requirements for his revelers are a sincere love of the&nl;Feywild, a talent for music or storytelling, and a willingness to set aside the prejudices of their former lives and live in harmony with the other revelers. That said, Hyrsam has the most fondness for those who share his dream of returning the Feywild to its original unfettered condition.&nl;
 CHARACTERDESC:
 CHARACTERCOMP:
 CHARACTERASSET:
@@ -111,6 +207,15 @@ CHARACTERMAGIC:
 CHARACTERDMNOTES:
 
 # Kits
+KIT:Charlatan Background
+KIT:Starting gold ~ Warlock
+KIT:two daggers
+KIT:Leather armor
+KIT:Quarterstaff
+KIT:Crossbow (Light)
+KIT:20 bolts
+KIT:Arcane Focus (Crystal)
+KIT:Scholar's Pack
 
 # Character Master/Follower
 
